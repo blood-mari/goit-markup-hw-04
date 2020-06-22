@@ -60,14 +60,14 @@ ul {
 /* Hidden text */
 
 .visually-hidden {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 /* Container components */
@@ -155,7 +155,7 @@ header .container {
 /* Hero Section */
 .hero {
   text-align: center;
-  background-color: var(--paragraph-text-color);
+  /* background-color: var(--paragraph-text-color); */
 
   padding-top: 200px;
   padding-bottom: 200px;
@@ -173,6 +173,16 @@ header .container {
 
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Hero background */
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.8));
+  outline: 1px solid slateblue;
 }
 
 /* Order the option - main button */
@@ -293,6 +303,8 @@ button {
   background-color: var(--paragraph-text-color);
   padding-top: 27px;
   padding-bottom: 27px;
+  padding-left: 82px;
+  padding-right: 82px;
 }
 
 .we-do-item {
@@ -372,8 +384,8 @@ button {
   align-items: center;
 }
 
-.clients-item a:hover,
-.clients-item a:focus {
+.clients-item:hover,
+.clients-item:focus {
   border-color: var(--accent-text-color);
 }
 
