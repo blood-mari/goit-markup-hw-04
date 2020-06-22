@@ -41,7 +41,8 @@ h3 {
 p,
 h1,
 a,
-img {
+img,
+b {
   margin: 0;
   padding: 0;
 }
@@ -180,8 +181,11 @@ header .container {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8)),
-    url(../images/header-img.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url(../images/header-img.jpg), var(--paragraph-text-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   outline: 1px solid slateblue;
 }
 
@@ -189,6 +193,7 @@ header .container {
 
 button {
   font-family: inherit;
+  cursor: pointer;
 }
 
 .button {
@@ -341,8 +346,7 @@ button {
 }
 
 .team-list .social-link {
-  color: #afb1b8;
-  background: var(--main-background-color);
+  background-color: var(--main-background-color);
 }
 
 .team-item {
@@ -362,6 +366,21 @@ button {
   padding: 30px 32px 24px;
 }
 
+.icon-instagram {
+  background-image: url(../images/Instagram.svg);
+}
+
+.icon-twitter {
+  background-image: url(../images/Twitter.svg);
+}
+
+.icon-facebook {
+  background-image: url(../images/Facebook.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../images/LinkedIn.svg);
+}
 /* Clients section */
 
 .clients-title {
@@ -439,8 +458,6 @@ footer .tel {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.14;
-
-  margin-bottom: 20px;
 }
 
 /* Join-us button */
@@ -451,10 +468,20 @@ footer .tel {
   letter-spacing: 0.06em;
   line-height: 1.88;
 
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding: 10px 29px;
   margin-top: 20px;
+  margin-bottom: 20px;
   min-width: 200px;
+}
+
+.secondary::after {
+  content: "";
+  background-image: url(../images/icon-send.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 .footer-social,
@@ -463,20 +490,40 @@ footer .tel {
   justify-content: space-between;
 }
 
+.footer-social {
+  margin-top: 20px;
+}
+
 .footer-social li:not(:last-child) {
   margin-right: 10px;
 }
 
 .social-link {
-  color: var(--dark-theme-text-color);
-  background: rgba(255, 255, 255, 0.1);
-
+  /* background-color: rgba(255, 255, 255, 0.1); */
   display: inline-block;
-  padding: 12px;
-  border: 1px solid transparent;
-  border-radius: 500%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.icon-footer-instagram {
+  background-image: url(../images/instagram-footer.svg);
+}
+
+.icon-footer-twitter {
+  background-image: url(../images/twitter-footer.svg);
+}
+
+.icon-footer-facebook {
+  background-image: url(../images/facebook-footer.svg);
+}
+
+.icon-footer-linkedin {
+  background-image: url(../images/linkedin-footer.svg);
+}
 /* .copyright {
   font-size: 12px;
   line-height: 2;
