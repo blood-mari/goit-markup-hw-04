@@ -14,6 +14,7 @@
   --plain-button-color: #f5f4fa;
   --section-staff-color: #f5f4fa;
   --background-footer-color: #2f303a;
+  --border-color: #afb1b8;
   --font-body: "Roboto", sans-serif;
   --font-logo: "Raleway", sans-serif;
 }
@@ -141,7 +142,7 @@ header .container {
   margin-left: auto;
 }
 
-.contacts-header .link {
+.contacts-header .contacts-link {
   color: var(--paragraph-text-color);
 
   display: flex;
@@ -149,14 +150,30 @@ header .container {
   padding-bottom: 10px;
 }
 
-/* .icon-mail::before {
-  content: "";
-  background-image: url(../images/icon-envelope.svg);
+.icon-envelope {
   width: 16px;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 16px;
   margin-right: 10px;
-} */
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.icon-envelope:hover,
+.icon-smartphone:hover {
+  stroke-width: 4px;
+}
+
+/* Example using before/after for SVG-icons */
 
 /* .icon-tel::before {
   content: "";
@@ -291,6 +308,19 @@ button {
   margin-left: 30px;
 }
 
+.features-layout {
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
 /* .features-item::before {
   content: "";
   display: block;
@@ -365,10 +395,6 @@ button {
   margin-bottom: 16px;
 }
 
-.team-list .social-link {
-  background-color: var(--main-background-color);
-}
-
 .team-item {
   width: calc((100% - 30px * 3) / 4);
 
@@ -376,7 +402,7 @@ button {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
-  border: #afb1b8;
+  border: var(--border-color);
 }
 
 .team-item-info {
@@ -384,6 +410,18 @@ button {
   background-color: var(--main-background-color);
 
   padding: 30px 32px 24px;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+}
+
+.team-social .social-link:hover,
+.team-social .social-link:focus {
+  --color1: #ffffff;
+  --color2: #ffffff;
+  background-color: var(--accent-text-color);
 }
 
 /* Clients section */
@@ -398,19 +436,53 @@ button {
 }
 
 .clients-item {
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--border-color);
+  stroke-width: 1px;
   border-radius: 4px;
   width: 170px;
   height: 90px;
+
   display: flex;
   justify-content: center;
-
   align-items: center;
 }
 
 .clients-item:hover,
 .clients-item:focus {
   border-color: var(--accent-text-color);
+  --color1: var(--accent-text-color);
+  --color2: var(--accent-text-color);
+  border-width: 2px;
+}
+
+.clients-icon-6 {
+  width: 88px;
+  height: 45px;
+}
+
+.clients-icon-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.clients-icon-4 {
+  width: 80px;
+  height: 42px;
+}
+
+.clients-icon-3 {
+  width: 41px;
+  height: 43px;
+}
+
+.clients-icon-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.clients-icon-1 {
+  width: 44px;
+  height: 49px;
 }
 
 /* Logo site footer */
@@ -491,20 +563,34 @@ footer .tel {
 
 .footer-social,
 .team-social {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social {
   margin-top: 20px;
 }
 
+.team-social li:not(:last-child),
 .footer-social li:not(:last-child) {
   margin-right: 10px;
 }
 
+.footer-social .icon-social {
+  --color1: var(--dark-theme-text-color);
+  --color2: var(--dark-theme-text-color);
+}
+
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+  background-color: var(--accent-text-color);
+}
+
 .social-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
