@@ -149,23 +149,23 @@ header .container {
   padding-bottom: 10px;
 }
 
-.icon-mail::before {
+/* .icon-mail::before {
   content: "";
   background-image: url(../images/icon-envelope.svg);
   width: 16px;
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 10px;
-}
+} */
 
-.icon-tel::before {
+/* .icon-tel::before {
   content: "";
   background-image: url(../images/icon-smartphone.svg);
   width: 10px;
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 10px;
-}
+} */
 
 .contacts-header li + li {
   margin-left: 30px;
@@ -291,34 +291,14 @@ button {
   margin-left: 30px;
 }
 
-.features-item::before {
+/* .features-item::before {
   content: "";
   display: block;
   height: 120px;
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.icon-antenna::before {
-  content: "";
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock:before {
-  content: "";
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram:before {
-  content: "";
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut:before {
-  content: "";
-  background-image: url(../images/astronaut.svg);
-}
+} */
 
 /* Description features*/
 
@@ -406,21 +386,6 @@ button {
   padding: 30px 32px 24px;
 }
 
-.icon-instagram {
-  background-image: url(../images/Instagram.svg);
-}
-
-.icon-twitter {
-  background-image: url(../images/Twitter.svg);
-}
-
-.icon-facebook {
-  background-image: url(../images/Facebook.svg);
-}
-
-.icon-linkedin {
-  background-image: url(../images/LinkedIn.svg);
-}
 /* Clients section */
 
 .clients-title {
@@ -539,31 +504,13 @@ footer .tel {
 }
 
 .social-link {
-  /* background-color: rgba(255, 255, 255, 0.1); */
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.icon-footer-instagram {
-  background-image: url(../images/instagram-footer.svg);
-}
-
-.icon-footer-twitter {
-  background-image: url(../images/twitter-footer.svg);
-}
-
-.icon-footer-facebook {
-  background-image: url(../images/facebook-footer.svg);
-}
-
-.icon-footer-linkedin {
-  background-image: url(../images/linkedin-footer.svg);
-}
 /* .copyright {
   font-size: 12px;
   line-height: 2;
