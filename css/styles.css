@@ -150,15 +150,8 @@ header .container {
   padding-bottom: 10px;
 }
 
-.icon-envelope {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
-
+.icon-envelope,
 .icon-smartphone {
-  width: 10px;
-  height: 15px;
   margin-right: 10px;
 }
 
@@ -166,12 +159,15 @@ header .container {
 .contacts-link:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
+  stroke: var(--accent-text-color);
+  stroke-width: 2px;
 }
 
-.icon-envelope:hover,
+/* .icon-envelope:hover,
 .icon-smartphone:hover {
   stroke-width: 4px;
-}
+  font-weight: 700;
+} */
 
 /* Example using before/after for SVG-icons */
 
@@ -447,8 +443,8 @@ button {
   align-items: center;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-item a:hover,
+.clients-item a:focus {
   border-color: var(--accent-text-color);
   --color1: var(--accent-text-color);
   --color2: var(--accent-text-color);
@@ -579,7 +575,6 @@ footer .tel {
 }
 
 .footer-social .icon-social {
-  --color1: var(--dark-theme-text-color);
   --color2: var(--dark-theme-text-color);
 }
 
