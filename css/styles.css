@@ -431,10 +431,11 @@ button {
   justify-content: space-between;
 }
 
-.clients-item {
+.clients-link {
   border: 1px solid var(--border-color);
   stroke-width: 1px;
   border-radius: 4px;
+
   width: 170px;
   height: 90px;
 
