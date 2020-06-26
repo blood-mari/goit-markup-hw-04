@@ -163,12 +163,6 @@ header .container {
   stroke-width: 2px;
 }
 
-/* .icon-envelope:hover,
-.icon-smartphone:hover {
-  stroke-width: 4px;
-  font-weight: 700;
-} */
-
 /* Example using before/after for SVG-icons */
 
 /* .icon-tel::before {
@@ -328,7 +322,7 @@ button {
 
 /* Description features*/
 
-.features-item p {
+.features-item > p {
   line-height: 1.7;
   color: var(--paragraph-text-color);
 }
@@ -352,6 +346,7 @@ button {
   text-align: center;
   color: var(--dark-theme-text-color);
   background-color: var(--paragraph-text-color);
+
   padding-top: 27px;
   padding-bottom: 27px;
   padding-left: 82px;
@@ -362,6 +357,10 @@ button {
   width: calc((100% - 30px * 2) / 3);
 }
 
+.we-do-item > img {
+  height: auto;
+  max-width: 100%;
+}
 /* team style */
 
 .section-team {
@@ -378,12 +377,12 @@ button {
   justify-content: space-between;
 }
 
-.team-list h3 {
+.team-item-info > h3 {
   font-size: 16px;
   font-weight: 500;
 }
 
-.team-list p {
+.team-item-info > p {
   font-size: 16px;
   color: var(--paragraph-text-color);
 
@@ -415,8 +414,8 @@ button {
 
 .team-social .social-link:hover,
 .team-social .social-link:focus {
-  --color1: #ffffff;
-  --color2: #ffffff;
+  --color1: var(--dark-theme-text-color);
+  --color2: var(--dark-theme-text-color);
   background-color: var(--accent-text-color);
 }
 
@@ -657,7 +656,6 @@ footer .tel {
 }
 
 .work-list-item img,
-.we-do-item img,
 .team-item img {
   display: block;
   max-width: 100%;
